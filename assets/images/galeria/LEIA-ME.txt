@@ -1,0 +1,12 @@
+PASTA /assets/images/galeria/
+==============================
+
+Coloque aqui as fotografias REAIS dos projectos da SHAQUIL CONSTRUÇÕES
+(formato recomendado: JPG ou WebP, largura entre 1600 e 2000 px, abaixo de 400 KB cada).
+
+Depois, registe cada fotografia no ficheiro central:
+
+    assets/js/imagens.js
+
+As imagens ilustrativas (SVG) das outras pastas servem apenas de exemplo e NAO
+representam obras realizadas pela empresa. Substitua-as por fotografias reais.

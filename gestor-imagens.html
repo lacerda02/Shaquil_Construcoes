@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestor de imagens — SHAQUIL CONSTRUÇÕES</title>
+<meta name="description" content="Ferramenta local para gerir as imagens do carrossel e da galeria.">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_MZ">
+<meta property="og:site_name" content="SHAQUIL CONSTRUÇÕES">
+<meta property="og:title" content="Gestor de imagens — SHAQUIL CONSTRUÇÕES">
+<meta property="og:description" content="Ferramenta local para gerir as imagens do carrossel e da galeria.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="gestor">
+<noscript><p style="padding:90px 20px 20px;text-align:center">Este website precisa de JavaScript activo para apresentar os conteúdos.</p></noscript>
+<main id="conteudo">
+<section class="pag-hero" data-hero-img="galeria">
+  <div class="container">
+    <div class="migalhas"><a href="index.html">Início</a> / Gestor de imagens</div>
+    <h1>Gestor de imagens</h1>
+    <p>Adicione, substitua, ordene e remova fotografias do carrossel e da galeria — directamente no seu navegador.</p>
+  </div>
+</section>
+
+<section class="secao secao-cinza">
+  <div class="container">
+    <div class="alerta alerta-aviso">
+      <strong>Importante — leia antes de usar.</strong> As imagens guardadas aqui ficam <u>apenas neste navegador e neste computador</u>
+      (armazenamento local). <strong>Não sincronizam com outros dispositivos e os visitantes do website não as vêem.</strong>
+      Servem para pré-visualizar e preparar. Para as publicar de forma permanente, use o botão
+      <em>“Exportar para publicação”</em>: descarrega as imagens e o ficheiro <code>imagens.js</code> actualizado, que deve copiar para as pastas
+      do website (<code>assets/images/galeria/</code> e <code>assets/js/</code>) antes de publicar de novo.
+    </div>
+    <div class="alerta alerta-info" id="gestor-estado" role="status">A carregar…</div>
+
+    <div class="tabs" role="tablist" aria-label="Lista a gerir">
+      <button class="filtro activo" type="button" role="tab" data-lista="carrossel">Carrossel da página inicial</button>
+      <button class="filtro" type="button" role="tab" data-lista="galeria">Galeria</button>
+    </div>
+
+    <div class="zona-largar" id="zona">
+      <p style="margin:0 0 14px"><strong>Arraste fotografias para aqui</strong> ou escolha-as no computador (pode seleccionar várias).</p>
+      <label class="btn btn-marinho" for="ficheiros">Escolher fotografias</label>
+      <input id="ficheiros" class="sr-only" type="file" accept="image/*" multiple>
+    </div>
+
+    <div id="lote" hidden>
+      <h3 style="margin-top:30px">Pré-visualização — confirme antes de adicionar</h3>
+      <div class="preview-lote" id="lote-grelha"></div>
+      <div class="form-acoes">
+        <button class="btn btn-ouro" id="lote-ok" type="button">Adicionar à lista</button>
+        <button class="btn btn-marinho" id="lote-cancel" type="button">Cancelar</button>
+      </div>
+    </div>
+
+    <h3 style="margin-top:40px">Imagens actuais <span id="contagem" style="color:var(--cinzento);font-weight:500"></span></h3>
+    <div class="gestor-grelha" id="gestor-lista"></div>
+
+    <div class="form-acoes" style="margin-top:30px">
+      <button class="btn btn-ouro" id="exportar" type="button">Exportar para publicação</button>
+      <button class="btn btn-marinho" id="repor" type="button">Repor imagens originais</button>
+      <a class="btn btn-marinho" href="index.html">Ver website</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/imagens.js"></script>
+<script src="assets/js/armazenamento.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/gestor.js"></script>
+</body>
+</html>

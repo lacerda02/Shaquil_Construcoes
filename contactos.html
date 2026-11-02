@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contactos — SHAQUIL CONSTRUÇÕES</title>
+<meta name="description" content="Contacte a SHAQUIL CONSTRUÇÕES em Quelimane, Moçambique: telefone, WhatsApp, e-mail, endereço, horário e mapa.">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_MZ">
+<meta property="og:site_name" content="SHAQUIL CONSTRUÇÕES">
+<meta property="og:title" content="Contactos — SHAQUIL CONSTRUÇÕES">
+<meta property="og:description" content="Contacte a SHAQUIL CONSTRUÇÕES em Quelimane, Moçambique: telefone, WhatsApp, e-mail, endereço, horário e mapa.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="contactos">
+<noscript><p style="padding:90px 20px 20px;text-align:center">Este website precisa de JavaScript activo para apresentar os conteúdos.</p></noscript>
+<main id="conteudo">
+<section class="pag-hero" data-hero-img="contactos">
+  <div class="container">
+    <div class="migalhas"><a href="index.html">Início</a> / Contactos</div>
+    <h1>Contactos</h1>
+    <p>Fale connosco. Estamos em Quelimane, Moçambique.</p>
+  </div>
+</section>
+
+<section class="secao secao-cinza">
+  <div class="container duas-col" style="align-items:start">
+    <div class="rev">
+      <div class="cab-secao"><span class="sobretitulo">Onde estamos</span><h2>Informações de contacto</h2></div>
+      <div class="contacto-lista" id="contacto-lista"></div>
+      <h3 style="margin:28px 0 12px;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase">Redes sociais</h3>
+      <div id="contacto-redes"></div>
+    </div>
+    <div class="mapa rev rev-d2"><iframe id="mapa-iframe" title="Mapa de localização — Quelimane, Moçambique" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="container" style="max-width:860px">
+    <div class="cab-secao centro rev"><span class="sobretitulo">Escreva-nos</span><h2>Formulário de contacto</h2></div>
+    <div class="form-cartao rev">
+      <div class="alerta alerta-aviso" id="aviso-wa" hidden></div>
+      <div class="alerta" id="resultado" role="status" hidden></div>
+      <form id="form-contacto" novalidate>
+        <div class="campos">
+          <div class="campo"><label for="c-nome">Nome <span class="obr">*</span></label>
+            <input id="c-nome" name="nome" type="text" autocomplete="name" required data-rotulo="Nome"><span class="erro-msg" aria-live="polite"></span></div>
+          <div class="campo"><label for="c-tel">Telefone <span class="obr">*</span></label>
+            <input id="c-tel" name="telefone" type="tel" autocomplete="tel" required data-rotulo="Telefone"><span class="erro-msg" aria-live="polite"></span></div>
+          <div class="campo largo"><label for="c-email">E-mail</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" data-rotulo="E-mail"><span class="erro-msg" aria-live="polite"></span></div>
+          <div class="campo largo"><label for="c-msg">Mensagem <span class="obr">*</span></label>
+            <textarea id="c-msg" name="mensagem" required data-rotulo="Mensagem"></textarea><span class="erro-msg" aria-live="polite"></span></div>
+        </div>
+        <div class="form-acoes">
+          <button class="btn btn-wa" id="btn-wa" type="button">Enviar por WhatsApp</button>
+          <button class="btn btn-marinho" id="btn-ext" type="button" hidden>Enviar por formulário</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/imagens.js"></script>
+<script src="assets/js/armazenamento.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

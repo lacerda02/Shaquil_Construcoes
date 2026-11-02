@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /gestor-imagens.html
+# Depois de ter domínio e sitemap.xml, acrescente:
+# Sitemap: https://www.SEU-DOMINIO/sitemap.xml
